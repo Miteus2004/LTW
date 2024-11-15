@@ -1,0 +1,144 @@
+
+#main-newProduct {
+    width: 50%;
+    font-size: 0.5rem;
+
+    h1{
+        font-size: 0.9rem;;
+    }
+
+    form>div {
+        background-color: rgb(114, 176, 203);
+        margin-top: 5vh;
+        padding: 5vh 3vw;
+
+        .contentWrapper {
+            width: 100%;
+
+            div {
+                width: 100%;
+            }
+
+            .inputWrapper {
+                display: flex;
+                flex-direction: column;
+            }
+
+            input,
+            textarea {
+                width: 100%;
+                padding: 0.4rem;
+                font-size: 0.6rem;
+                outline: none;
+            }
+
+            textarea {
+                height: 30vh;
+                resize: none;
+            }
+        }
+    }
+
+    h2 {
+        margin-bottom: 0.7rem;
+    }
+
+    .inputInfo {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 0.2rem;
+
+        .errorMessage {
+            visibility: hidden;
+            color: red;
+        }
+
+    }
+
+    #basicInfo .secondaryInfo {
+        display: flex;
+        height: fit-content;
+
+        select {
+            width: 50%;
+            height: 7vh;
+            margin-right: 1rem;
+            outline: none;
+        }
+    }
+
+    #photos {
+        input {
+            display: none;
+        }
+
+        #imageList {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin: 0 auto;
+            gap: 2vw;
+
+            >* {
+                width: 9vw;
+                height: 13vh;
+            }
+
+            #photoUploadButton {
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                font-size: 1rem;
+
+                cursor: pointer;
+            }
+
+            .photoPreview {
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: white;
+
+                .productImage {
+                    width: 100%;
+                    height: auto;
+                    max-width: 100%;
+                    max-height: 100%;
+                    display: block;
+                }
+
+                i {
+                    display: none;
+                    background-color: white;
+                    padding: 0.75vh 0.5vw;
+                    border-radius: 50%;
+                    font-size: 0.7rem;
+                    position: absolute;
+                    right: -10px;
+                    top: -10px;
+                }
+
+                &:hover {
+                    i {
+                        display: inline;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+
+    #btns {
+        text-align: center;
+    }
+
+    button {
+        margin-left: 1.1vw;
+        padding: 1.5vh 1vw;
+
+    }
+}

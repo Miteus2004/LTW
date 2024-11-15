@@ -1,0 +1,88 @@
+#sendproduct{
+    height: 95vh;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+}
+
+#header{
+    margin-top: 3vh;
+    display: flex;
+    flex-direction: row;
+    gap: 1.5vw;
+    background-color: transparent;
+}
+
+
+img{
+    height: 10vh;
+    width: auto;
+}
+
+h1{
+    font-size: 1.5rem;
+}
+
+#details{
+    border: 2px solid black;
+    padding: 3vh 2vw;
+    border-radius: 10px;
+    width: 100%;
+    margin-bottom: 5vh;
+
+    h3{
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+    p{
+        font-size: 0.7rem;
+        margin-top: 2vh;
+    }
+
+    #total{
+        text-align: end;
+    }
+
+}
+
+#btns{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    gap: 3vh;
+
+    button{
+        font-size: 0.5rem;
+        padding: 1vh 2vw;
+    };
+}
+
+
+/*Print*/
+
+@page {
+    margin: 0;
+}
+
+
+@media print {
+
+    #sendproduct {
+        width: 100vw;
+    }
+
+    #details {
+        margin: 0 auto; 
+        width: 80%;
+        text-align: left; 
+    }
+
+    #btns {
+        display: none; 
+    }
+    
+}
